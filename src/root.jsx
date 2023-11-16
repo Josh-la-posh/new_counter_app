@@ -1,16 +1,16 @@
 import React from "react";
 import CounterApp from "./counter_app/CounterApp";
 import TodoList from "./todo_list/TodoList";
+import Header from "./components/header";
+import { Outlet } from "react-router-dom";
 
-function App() {
+function Root() {
   return (
     <div className="">
-      <CounterApp />
-      <br />
-      <br /><br />
-      <TodoList />
+      <Header />
+      <Outlet />
     </div>
   )
 }
 
-export default App;
+export default Root;
